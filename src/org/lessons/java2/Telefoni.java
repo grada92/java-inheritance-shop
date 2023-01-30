@@ -5,6 +5,7 @@ public class Telefoni extends Prodotto {
 	int codiceImei;
 
 	int memoria;
+	
 	//Costruttore Telefoni
 	
 	public Telefoni(String nome, String marca, int prezzo, int codiceImei, int memoria) {

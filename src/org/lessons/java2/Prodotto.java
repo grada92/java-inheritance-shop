@@ -9,6 +9,7 @@ public class Prodotto {
 	String marca;
 	int prezzo;
 	int iva;
+	Random r = new Random();
 	
 	//Costruttore Prodotto
 	public Prodotto(String nome, String marca, int prezzo) {
@@ -16,7 +17,7 @@ public class Prodotto {
 		this.nome = nome;
 		this.marca = marca;
 		this.prezzo = prezzo;
-		
+		this.codice=r.nextInt(1000);
 		this.iva = (this.prezzo * 22) /100;
 		
 	}
@@ -35,9 +36,7 @@ public class Prodotto {
 	
 
 	public int getCodice() {
-		Random n = new Random(1000);
-		int numeroCodice = n.nextInt();
-		return this.codice = numeroCodice;
+		return this.codice;
 	}
 
 	public String getMarca() {
