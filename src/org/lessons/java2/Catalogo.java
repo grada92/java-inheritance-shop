@@ -66,6 +66,8 @@ public class Catalogo {
 			
 			System.out.println("ecco il telefono" + c);
 			
+			s.close();
+			
 		}
 
 	}
